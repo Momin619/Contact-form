@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style></style>
+    <!-- linking CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/images/favicon-32x32.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <div class="form">
+      <form>
+        <h1>Contact us</h1>
+        <div class="flex-box">
+          <div class="first-name">
+            <label for="name"
+              >First name
+              <sup
+                ><span class="reqiured" style="color: green">*</span></sup
+              ></label
+            >
+            <input required type="text" name="" id="name" / class="input-fields"
+            placeholder="First name">
+          </div>
+          <div class="last-name">
+            <label for="last"
+              >Last name
+              <sup>
+                <span class="reqiured" style="color: green">*</span></sup
+              ></label
+            >
+            <input required type="text" / id="last" class="input-fields"
+            placeholder="Last name">
+          </div>
+        </div>
+        <div class="email">
+          <label for="email"
+            >Email
+            <sup
+              ><span class="reqiured" style="color: green">*</span></sup
+            ></label
+          >
+          <input type="email" required name="" id="email" / class="input-fields"
+          placeholder="Email">
+        </div>
+        <label for="">Query type</label>
+        <div class="queries">
+          <span class="query1 query">
+            <input class="styled-checkbox" type="checkbox" name="" id="" />
+            <label for="">General inqiury</label>
+          </span>
+          <span class="query2 query">
+            <input class="styled-checkbox" type="checkbox" name="" id="" />
+            <label for=""> Support Request</label>
+          </span>
+        </div>
+        <label for=""
+          >Message <span class="reqiured" style="color: green">*</span></label
+        >
+        <textarea
+          required
+          placeholder="Type your message..."
+          class="input-fields"
+        ></textarea>
+        <div class="flex-2">
+          <input
+            required
+            type="checkbox"
+            class="checkbox-unstyled"
+            name=""
+            id=""
+          />
+          <p>I consent to being contacted by the team *</p>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <!-- linking js file -->
+    <script src="./app.js"></script>
+  </body>
+</html>
